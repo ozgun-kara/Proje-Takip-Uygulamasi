@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ozgun.bitirmeprojesi">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Yonetici_Girisi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Calisan_Girisi"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Yonetici_Hesabi_Olustur"
+            android:parentActivityName=".Yonetici_Girisi" />
+        <activity
+            android:name=".Yonetici_Paneli"
+            android:parentActivityName=".Yonetici_Girisi" />
+        <activity
+            android:name=".Calisan_Paneli"
+            android:parentActivityName=".Calisan_Girisi" />
+        <activity
+            android:name=".Projeler"
+            android:parentActivityName=".Yonetici_Paneli" />
+        <activity
+            android:name=".Calisanlar"
+            android:parentActivityName=".Yonetici_Paneli" />
+        <activity
+            android:name=".Bilgilerim"
+            android:parentActivityName=".Yonetici_Paneli" />
+        <activity android:name=".Proje_Detayi" />
+        <activity android:name=".Calisan_Detayi" />
+        <activity android:name=".Yeni_Proje_Olustur" />
+        <activity android:name=".Yeni_Calisan_Olustur"></activity>
+    </application>
+
+</manifest>
